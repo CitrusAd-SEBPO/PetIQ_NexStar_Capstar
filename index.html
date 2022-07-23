@@ -1328,6 +1328,7 @@
             -ms-flex: 0 0 30%;
             flex: 0 0 30%;
             position: relative;
+            padding-left: 10px;
         }
 
         .citrus-orgins-right {
@@ -2105,6 +2106,7 @@
                 -webkit-box-flex: 0;
                 -ms-flex: 0 0 100%;
                 flex: 0 0 100%;
+                
             }
 
             .citrus-orgins-right {
@@ -2542,6 +2544,17 @@
             .citrus-life-cycle-chart-area {
                 padding-top:0;
                 margin-top: 100px;
+            }
+
+            .citrus-common-header>h2 {
+                padding-left: 10px;
+                padding-right: 10px;
+                font-size: 18px;
+                line-height: 24px;
+            }
+
+            .citrus-orgins-right {
+                padding-bottom: 25px;
             }
 
             .benefits-icon-flex {
@@ -3237,15 +3250,15 @@
                 var splideDefaultOptions =
                 {
                     rewind: true,
-                    type: 'slide',
+                    type: "loop",
                     autoplay: false,
-                    rewindSpeed: 500,
                     pagination: false,
-                    speed: 500,
-                    pauseOnHover: true,
+                    rewindSpeed: 5000,
+                    speed: 2500,
+                    pauseOnHover: false,
                     perPage: 4,
                     perMove: 2,
-                    width: '100%',
+                    width: "100%",
                     breakpoints: {
                         375: {
                             perPage: 1,
@@ -3260,12 +3273,12 @@
                             perPage: 3,
                         },
                         1024: {
-                            perPage: 6,
+                            perPage: 4,
                         },
                         1200: {
-                            perPage: 6,
-                        }
-                    }
+                            perPage: 4,
+                        },
+                    },
                 }
 
                 new Splide(splideElement, splideDefaultOptions).mount();
@@ -3333,6 +3346,7 @@
                 rewind: true,
                 type: "loop",
                 autoplay: false,
+                pagination: false,
                 rewindSpeed: 5000,
                 speed: 2500,
                 pauseOnHover: false,
